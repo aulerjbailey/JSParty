@@ -1,0 +1,211 @@
+/*
+* Estilos CSS
+*/
+
+#cuadro{
+	z-index: 200000;
+	width: 97.5%;
+	height: 670px;
+	/*background-color: #37ce34;*/
+	background-image: url("../img/instrucciones.jpg");
+	background-size: cover;
+	position: absolute;
+}
+#config{
+	z-index: 200000;
+	width: 97.5%;
+	height: 670px;
+	/*background-color: #37ce34;*/
+	background-image: url("../img/fondov.png");
+	background-size: cover;
+	position: absolute;
+
+}
+#shyguy{
+	width: 250px;
+}
+#help{
+	width: 400px;
+}
+
+label{
+	color: white;
+	font-size: 20pt;
+}
+#bowser1,  #daisy1,  #dk1,  #luigi1, #mario1, #peach1, #rosalina1, #toadette1, #wario1, #yoshi1,
+#bowser2, #daisy2, #dk2, #luigi2, #mario2, #peach2, #rosalina2, #toadette2, #wario2, #yoshi2, #botonPlay,
+#boo1, #shyguy1, #boo2, #shyguy2{
+	width: 170px;
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(0.1,1.5,1,1);
+
+	/*box-shadow: 0 0 6px 5px yellow;*/
+}
+#bowser1{
+	/*filter: grayscale(100%);*/
+}
+#juego1{
+	background-image: url("../img/jug1.jpg");
+	background-size: cover;
+	height: 478px;
+}
+
+#juego2{
+	background-image: url("../img/jug2.jpg");
+	background-size: cover;
+	height: 478px;
+}
+img:hover{
+	transform: scale(.80);
+}
+#predeterminada1:hover, #predeterminada2:hover, #versus:hover, #shyguy:hover, #help:hover, #help2:hover,
+#peachG:hover, #marioG:hover, #yoshiG:hover, #fondo:hover, #fondo1:hover, #fondo2:hover, #batalla:hover{
+	transform: scale(1);
+}
+#nube:hover{
+	transform: scale(.95);
+}
+#segundos{
+	height: 50px;
+	font-size: 25pt;
+	font-family: impact;
+}
+#a, #b, #score1, #score2{
+	margin-top: -30px;
+	color:white;
+	font-size: 25pt;
+
+}
+#predeterminada1, #predeterminada2{
+	
+	width: 220px;
+
+}
+#versus{
+	/*margin-top: -800px;
+	margin-left: -60px;*/
+	margin-top: -70%;
+	margin-left: -21%;
+	width: 130px;
+	box-shadow: none;
+}
+#botonPlay{
+	width: 100px;
+	
+}
+#nube{
+	width: 400px;
+}
+#ss{
+	margin-left: -30px;
+}
+#signo{
+	background-image: url("../img/fc.png");
+	background-size: 100%;
+}
+#x{
+	
+	height: 100px;
+	position: absolute;
+	background-color: red;
+	z-index: 200000;
+}
+#score1, #score2, #a, #b{
+	font-family: impact;
+}
+#puntos{
+	font-family: verdana;
+}
+#boton2{
+	height: 70px;
+	font-family: arial;
+	font-size: 20pt;
+}
+#botonConfig1, #botonConfig2, #botonConfig3{
+	margin-top: 10%;
+	height: 70px;
+	font-family: arial;
+	font-size: 20pt;
+}
+#ci{
+	width: 100%;
+	height: 450px;
+	background-image: url("../img/uno.png");
+	background-size: cover;
+	border-radius: 10px;
+}
+#ct{
+	width: 100%;
+	height: 450px;
+	background-image: url("../img/dos.png");
+	background-size: cover;
+	border-radius: 10px;
+}
+#cm{
+	width: 100%;
+	height: 450px;
+	background-image: url("../img/tres.png");
+	background-size: cover;
+	border-radius: 10px;
+}
+#other{
+	height: 30px;
+}
+#imagen1, #imagen2, #imagen3, #imagen4, #imagen5, #tecla1, #tecla2{
+	height: 50px;
+	border-color: #000000;
+	font-size: 18pt;
+}
+#imagen1{
+	background-image: url("../img/fondo1.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+#imagen2{
+	background-image: url("../img/fondo2.png");
+	background-size: cover;
+	color: #000000;
+}
+#imagen3{
+	background-image: url("../img/fondo3.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+#imagen4{
+	background-image: url("../img/fondo4.jpg");
+	background-size: cover;
+	color: #ffffff;
+}
+#imagen5{
+	background-image: url("../img/fondo5.gif");
+	background-size: cover;
+	color: #ffffff;
+}
+#musica1,#musica2,#musica3,#musica4,#musica5{
+	height: 50px;
+	border-color: #000000;
+	font-size: 18pt;
+}
+#marioG{
+	width: 300px;
+}
+#peachG{
+	width: 250px;
+}
+#yoshiG{
+	width: 360px;
+}
+#fondo{
+	background-size: cover;
+	position: fixed;
+}
+#chispa1, #chispa2{
+	width: 200px;
+	position: absolute;
+	margin-left: -70%;
+}
+#boton{
+	border-color: #000000;
+	border-width: 5px;
+	border-radius: 10px;
+}

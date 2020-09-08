@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	
+	<title>JavaScript Party</title>
+</head>
+<body onload="inicio()">
+	<audio id="cancHome" type="audio/mp3" src="resources/cancionHome.mp3"></audio>
+	<img src="img/fondo3.jpg" id="fondo" width="100%" height="100%">
+	
+	<div class="container-fluid" >
+		
+<!--Div de ayuda-->
+		<div class="row">
+			
+			<div class="col-lg">
+
+				<div id="cuadro">
+					
+					<div class="row">
+
+						<div class="col-lg-3"></div>
+						<div class="col-lg-6 text-center">
+							<div class="row">
+
+								<div class="col-lg-4"></div>
+
+								<div class="col-lg-5">
+									<img id="help" src="img/es.png">
+									
+									
+								</div>
+								
+								<div class="col-lg-3"></div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-4">
+
+									<img id="shyguy" src="img/unknown.png">
+
+								</div>
+								<div class="col-lg-3">
+									
+								</div>
+								<div class="col-lg-3">
+									<button id="boton" class="btn btn-light btn-block">Siguiente</button>
+								</div>
+								<div class="col-lg-2"></div>
+							</div>
+						</div>
+
+
+						<div class="col-lg-3 text-center"></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+<!--Div de configuración-->
+		
+		<div class="row">
+			<div class="col-lg">
+					<div id="config">
+						<div class="row">
+							<div class="col-lg-4"></div>
+							<div class="col-lg-4">
+								<button id="boton2" class="btn btn-info btn-block">¡A jugar!</button>
+							</div>
+							<div class="col-lg-4"></div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4">
+								<button id="botonConfig1" onclick="config1()" class="btn btn-danger btn-block">
+								Cambiar Imagen</button>
+<!--Inicia cambiar Imagen-->
+								<div id="ci">
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="imagen1" class="btn btn-light btn-block" onclick="cambiarImagen1()">
+											Imagen 1</button>
+											<img id="fondo1" src="img/fondo1.jpg">
+										</div>
+									</div>
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="imagen2" class="btn btn-light btn-block" onclick="cambiarImagen2()">
+											Imagen 2</button>
+											<img id="fondo2" src="img/fondo2.png">
+										</div>
+									</div>
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="imagen3" class="btn btn-light btn-block" onclick="cambiarImagen3()">
+											Imagen 3</button>
+											<img id="fondo3" src="img/fondo3.jpg">
+										</div>
+									</div>
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="imagen4" class="btn btn-light btn-block" onclick="cambiarImagen4()">
+											Imagen 4</button>
+											<img id="fondo4" src="img/fondo4.jpg">
+										</div>
+									</div>
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="imagen5" class="btn btn-light btn-block" onclick="cambiarImagen5()">
+											Imagen 5 (GIF)</button>
+											<img id="fondo5" src="img/fondo5.gif">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg text-center">
+										<img src="img/marioG.gif" id="marioG">
+									</div>
+									
+								</div>
+<!--Termina cambiar Imagen-->
+							</div>
+							<div class="col-lg-4">
+								<button id="botonConfig2" onclick="config2()" class="btn btn-warning btn-block">
+								Configurar Tecla</button>
+<!--Inicia configurar Tecla-->
+								<div id="ct">
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="tecla1" onclick="configTecla1()" class="btn btn-danger btn-block">
+											Tecla jugador 1</button>
+										</div>
+									</div>
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="tecla2" onclick="configTecla2()" class="btn btn-primary btn-block">
+											Tecla jugador 2</button>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg text-center">
+										<img src="img/peachG.gif" id="peachG">
+										
+									</div>
+								</div>
+<!--Termina configurar Tecla-->
+
+							</div>
+							<div class="col-lg-4">
+								<button id="botonConfig3" onclick="config3()" class="btn btn-success btn-block">
+								Cambiar Música</button>
+<!--Inicia cambiar Música-->
+								<div id="cm">
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="musica1" onclick="cambiarMusica1()" 
+											class="btn btn-light btn-block">
+											Música 1</button>
+											<audio id="music1" type="audio/mp3" src="resources/cancion1.mp3"></audio>
+										</div>
+									</div>
+
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="musica2" onclick="cambiarMusica2()" 
+											class="btn btn-light btn-block">
+											Música 2</button>
+											<audio id="music2" type="audio/mp3" src="resources/cancion2.mp3"></audio>
+										</div>
+									</div>
+
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="musica3" onclick="cambiarMusica3()" 
+											class="btn btn-light btn-block">
+											Música 3</button>
+											<audio id="music3" type="audio/mp3" src="resources/cancion3.mp3"></audio>
+										</div>
+									</div>
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="musica4" onclick="cambiarMusica4()" 
+											class="btn btn-light btn-block">
+											Música 4</button>
+											<audio id="music4" type="audio/mp3" src="resources/cancion4.mp3"></audio>
+										</div>
+									</div>
+									<div class="row">
+										<div id="other" class="col-lg-12"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button id="musica5" onclick="cambiarMusica5()" 
+											class="btn btn-light btn-block">
+											Música 5</button>
+											<audio id="music5" type="audio/mp3" src="resources/cancion5.mp3"></audio>
+										</div>
+									</div>
+
+								</div>
+								<div class="col-lg text-center">
+									<img src="img/yoshiG.gif" id="yoshiG">
+								</div>
+<!--Termina cambiar Música-->
+							</div>
+						</div>
+						
+					</div>
+				
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia1()" onmouseover="burbuja(this)" id="bowser1" src="img/bowserjrprofile.png">
+						<audio id="jugador" src=""></audio>
+						<audio id="player1" src=""></audio>
+						<audio id="player3" src=""></audio>
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia2()" onmouseover="burbuja(this)" id="daisy1" src="img/daisyprofile.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia3()" onmouseover="burbuja(this)"  id="dk1" src="img/dkprofile.png">	
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia4()" onmouseover="burbuja(this)"  id="luigi1" src="img/luigiprofile.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia5()" onmouseover="burbuja(this)"  id="mario1" src="img/marioprofile.png">
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia6()" onmouseover="burbuja(this)"  id="peach1" src="img/peachprofile.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia7()" onmouseover="burbuja(this)"  id="rosalina1" src="img/rosalinaprofile.png">
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia8()" onmouseover="burbuja(this)"  id="toadette1" src="img/toadetteprofile.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia9()" onmouseover="burbuja(this)"  id="wario1" src="img/warioprofile.png">
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia10()" onmouseover="burbuja(this)"  id="yoshi1" src="img/yoshiprofile.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambiaExtra1()" onmouseover="burbuja(this)"  id="boo1" src="img/booprofile.png">
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambiaExtra2()" onmouseover="burbuja(this)"  id="shyguy1" src="img/shyguyprofile.png">
+					</div>
+				</div>
+			</div>
+			<div id="jugadores" class="col-lg-6">
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div id="juego1" class="col-lg text-center">
+						<div >
+							<br/>
+							<button id="see1" type="button" class="btn btn-danger btn-block">Jugador 1
+							</button>
+							
+							<div id="profileju1 text-center">
+								<img id="predeterminada1" src="img/rojo.png">
+
+								<img id="chispa1" src="img/chispa1.png">
+
+								<br/>
+								
+								<label id="puntos">	Score: </label>
+								<br /><br />
+								<div id="score1" class="button text-center">0</div>
+
+								<label id="puntos">Hits:</label>
+								<br /><br />
+								<div id="a" class="button text-center">0</div>
+
+							</div>
+						</div>
+					</div>
+					<div id="juego2" class="col-lg text-center">
+						<div >
+							<br/>
+							<button id="see2" type="button" class="btn btn-primary btn-block">Jugador 2</button>
+							<div id="profileju2 text-center">
+								<img id="predeterminada2" src="img/azul.png">
+								<img id="chispa2" src="img/chispa1.png">
+								<br/>
+
+								<label id="puntos">	Score: </label>
+								<br /><br />
+								<div id="score2" class="button text-center">0</div>
+
+								<label id="puntos">Hits:</label>
+								<br /><br />
+								<div id="b" class="button text-center">0</div>
+								<!--<img id="versus" src="img/vs.png">-->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-1"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-4 text-center">
+					</div>
+					
+					<div class="col-lg-4 text-center">
+						<img id="botonPlay" onmouseover="py(this)" onclick="Tiempo(), clickCounter()" src="img/play.png" 
+						class="button">
+						<audio id="ppy" src=""></audio>
+						<audio id="sonidoPlay" type="audio/mp3" src="resources/soundPlay.mp3"></audio>
+						<input type="text" class="btn-sm text-center btn-block" value="00" id="segundos" 
+						disabled="true">   
+						
+					</div>
+
+					<div class="col-lg-4"></div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<img id="nube" src="img/ayuda.png" onclick="configuracion()" onmouseover="ayuda(this)">
+						<audio id="nubex" src=""></audio>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="col-lg-3" id="ss">
+				
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia11()" onmouseover="burbuja(this)" id="bowser2" src="img/bowserjrprofile.png">
+						<audio id="player2" src=""></audio>
+						<audio id="player4" src=""></audio>
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia12()" onmouseover="burbuja(this)" id="daisy2" src="img/daisyprofile.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia13()" onmouseover="burbuja(this)" id="dk2" src="img/dkprofile.png">
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia14()" onmouseover="burbuja(this)" id="luigi2" src="img/luigiprofile.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia15()" onmouseover="burbuja(this)" id="mario2" src="img/marioprofile.png">
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia16()" onmouseover="burbuja(this)" id="peach2" src="img/peachprofile.png">
+					</div>
+				</div>
+
+				
+
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia17()" onmouseover="burbuja(this)" id="rosalina2" src="img/rosalinaprofile.png">
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia18()" onmouseover="burbuja(this)" id="toadette2" src="img/toadetteprofile.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia19()" onmouseover="burbuja(this)" id="wario2" src="img/warioprofile.png"> 
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambia20()" onmouseover="burbuja(this)" id="yoshi2" src="img/yoshiprofile.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 text-center">
+						<img onclick="cambiaExtra3()" onmouseover="burbuja(this)"  id="boo2" src="img/booprofile.png">
+					</div>
+					<div class="col-lg-6 text-center">
+						<img onclick="cambiaExtra4()" onmouseover="burbuja(this)"  id="shyguy2" src="img/shyguyprofile.png">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/principal.js"></script>
+</body>
+</html>
